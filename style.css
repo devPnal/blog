@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  height: 100%;
+  font-family: "Malgun Gothic","맑은 고딕","Roboto","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
+}
+
+/*
+사이드 바 
+*/
+.sidebar {
+  display: block;
+  position: fixed;
+  float: left;
+  margin: 0px;
+  width: 250px;
+  height: 100%;
+  background: #fafafa;
+  box-shadow: 4px 0 4px -4px #ccc;
+}
+
+/*
+헤더
+*/
+header {
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background: #333;
+}
+
+header a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+.site-title {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-size: 2.3em;
+}
+
+.site-subtitle {
+  display: inline;
+  font-size: 1em;
+  color: #fefefe;
+}
+
+/*
+어바웃 / 컨택트 
+*/
+.site-nav {
+  list-style: none;
+  padding: 0px;
+  line-height: 45px;
+  margin-top: 0px;
+}
+
+.site-nav .site-nav-special a {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  width: 50%;
+}
+
+.site-nav-blank {
+  clear: both;
+}
+
+.site-nav li a:hover {
+  background: #eee;
+}
+
+/*
+태그
+*/
+.subject-text {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.site-tags {
+  display: inline-block;
+  list-style: none;
+  line-height: 45px;
+  padding: 10px;
+}
+
+.site-tags a {
+  background: #333;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.site-tags a:hover {
+  text-decoration: underline;
+}
+
+/*
+푸타
+*/
+footer {
+  position: absolute;
+  bottom: 10px;
+}
+
+.footer-msg a {
+  font-size: 14px;
+  padding-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-msg a:hover {
+  text-decoration: underline;
+}
+
+/*
+본문
+*/
+article {
+  margin-left: 250px;
+  width: Calc(100% - 250px);
+  height: 100%;
+}
+
+.article-wrap {
+  width: 780px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.article-title {
+  font-size: 28px;
+  margin: 0px;
+}
+
+.article-description {
+  display: inline-block;
+}
+
+.post-date {
+  display: inline-block;
+  float: right;
+}
+
+
+.main-article {
+  padding-top: 10px;
+}
+
+.main-article h1 {
+  font-size: 28px;
+}

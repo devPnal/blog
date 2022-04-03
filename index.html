@@ -3,22 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<title>Temp Title</title>
-    <script src="script/marked.js"></script>
-    <script src="script/loadHTML.js"></script>
+	<link rel="stylesheet" href="/style.css">
+  <script src="/script/marked.js"></script>
+  <script src="/script/core-script.js"></script>
 </head>
 <body>
-	<header>
-	</header>
-	<nav>
-	</nav>
+	<div class='sidebar'>
+		<header><a href="/">
+			<h1 class='site-title'>Pnal</h1>
+			<h2 class='site-subtitle'>| blog</h2>
+		</header>
+		<nav>
+			<ul class='site-nav'>
+				<li class='site-nav-special'><a href = '#'>About</a></li>
+				<li class='site-nav-special'><a href = '#'>Contact</a></li>
+				<li class='site-nav-blank'></li>
+			</ul>
+			<p class='subject-text'>Posts</p>
+			<div class='site-tags'>
+				<a href='#'>전체</a>
+				<a href='#'>개발 철학</a>
+				<a href='#'>오픈소스</a>
+				<a href='#'>웹 디자인/개발</a>
+				<a href='#'>응용 프로그램</a>
+				<a href='#'>UX / UI</a>
+				<a href='#'>사회 연구</a>
+			</div>
+		</nav>
+		<footer>
+			<p class='footer-msg'><a href='#'>개인정보 보호정책</a></p>
+		</footer>
+	</div>
 	<article>
-        <script>
-            loadHTML("README.md", data=>document.write(marked.parse(data)));
-        </script>
+		<div class='article-wrap'>
+			<section>
+				<h1 class='article-title'><script>loadHTML("meta.md", data=>document.write(getArticleInfo(data).title));</script></h1>
+				<p class='article-description'><script>loadHTML("meta.md", data=>document.write(getArticleInfo(data).description));</script></p>
+				<p class='post-date'><script>loadHTML("meta.md", data=>document.write(getArticleInfo(data).date));</script></p>
+				<hr>
+				<div class='main-article'>
+					<script>
+						loadHTML("README.md", data=>document.write(marked.parse(data)));
+					</script>
+				</div>
+			</section>
+		</div>
 	</article>
-	<footer>
-	</footer>
-	
-	
 </body>
 </html>
