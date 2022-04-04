@@ -39,7 +39,7 @@
 			<section>
 				<script>
 					var metaArr = [];
-					loadHTML("/post/1.md", data=>(metaArr = getArticleInfo(data)));
+					loadHTML("post.md", data=>(metaArr = getArticleInfo(data)));
 					document.write("<h1 class='article-title'>" + metaArr.title + "</h1>");
 					document.write("<p class='article-description'>" + metaArr.description + "</p>");
 					document.write("<p class='post-date'>" + metaArr.date + "</p>");

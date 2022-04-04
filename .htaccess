@@ -1,3 +1,5 @@
+
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+Options -Indexes
+RewriteCond %{REQUEST_URI} !index\.html
+RewriteRule ^([^\.]+)$ https://naver.com [NC,L]

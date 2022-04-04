@@ -20,5 +20,7 @@ function getArticleInfo(_rawText)
     result["title"] = text[0].replace("title: ", "");
     result["description"] = text[1].replace("description: ", "");
     result["date"] = text[2].replace("date: ", "");
+    result["article"] = _rawText.split("@start==")[1];
+    
     return result;
 }
