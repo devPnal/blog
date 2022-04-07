@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   background: #fdfdfd;
   height: 100%;
-  font-family: "Malgun Gothic","맑은 고딕","Roboto","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
+  font-family: "Malgun Gothic","맑은 고딕","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
 }
 
 /* h1 ~ h6 스타일 */
@@ -58,8 +58,19 @@ table tr th :last-child, table tr td :last-child {
   margin-bottom: 0;
 }
 
+/* 인용문 */
+blockquote {
+  color: #333;
+  border-left: 5px solid #888;
+  padding: 0 1em;
+  margin-left: 0;
+}
+
 /* a 태그 기본 색상*/
 a { color: #0077aa; }
+
+/* 코드 */
+code { font-family: Consolas, Menlo, Arial; }
 
 /* 사이드 바 */
 .sidebar {
