@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<title>Temp Title</title>
 	<link rel="stylesheet" href="/style.css">
-  <script src="/script/marked.js"></script>
-  <script src="/script/core-script.js"></script>
 </head>
 <body>
 	<div class='sidebar'>
@@ -37,14 +35,28 @@
 	<article>
 		<div class='article-wrap'>
 			<section>
-				<script>
-					var metaArr = [];
-					loadHTML("/post/1.md", data=>(metaArr = getArticleInfo(data)));
-					document.write("<h1 class='article-title'>" + metaArr.title + "</h1>");
-					document.write("<p class='article-description'>" + metaArr.description + "</p>");
-					document.write("<p class='post-date'>" + metaArr.date + "</p>");
-					document.write("<hr><div class='main-article'> " + marked.parse(metaArr.article) + "</div>");
-				</script>
+					<h1>프로그램 생각하는 나날, 프날</h1>
+					<p>프로그램 개발과 관련한 연구, 철학, 생각을 담은 블로그입니다.</p>
+					<hr>
+					<p>공지사항
+					<a href='#'> > 이 블로그는 어떻게 만들어졌나요? (바로가기)</a>
+					</p>
+					<br>
+					<h2>최근 올라온 글</h2>
+					<div class='recent-posts-list'>
+					
+						<div class='recent-post'>
+							<div class='post-thumbnail-wrap'><img src='assets/default-thumbnail.png' alt='thumbnail' class='post-thumbnail'></img></div>
+							<div class='post-infomation'>
+								<a href='#' class='post-title'>최근 포스트 제목: 최근 포스트 제목 테스트입니다.</a>
+								<span class='post-description'>최근 포스트에 관한 설명 최근 포스트에 관한 설명 최 설명  최근 포스트에 관한 설명 최근 포스트에 관한 설명 최근 포스트에 관한 설명</span>
+								<div class='post-tags'><a href='#'>테스트용 태그</a></di>
+								<span class='post-date'>2022-00-00 00:00</span>
+							</div>
+						</div>
+						
+						
+					</div>
 			</section>
 		</div>
 	</article>

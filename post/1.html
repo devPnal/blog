@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
@@ -37,14 +37,24 @@
 	<article>
 		<div class='article-wrap'>
 			<section>
-				<script>
-					var metaArr = [];
-					loadHTML("post.md", data=>(metaArr = getArticleInfo(data)));
-					document.write("<h1 class='article-title'>" + metaArr.title + "</h1>");
-					document.write("<p class='article-description'>" + metaArr.description + "</p>");
-					document.write("<p class='post-date'>" + metaArr.date + "</p>");
-					document.write("<hr><div class='main-article'> " + marked.parse(metaArr.article) + "</div>");
-				</script>
+				<p></p>
+<h1 id="md2html-gui">md2html-gui</h1>
+<p>The GUI tool that changes the .md file to a .html file. (marked.js is used)</p>
+<h2 id="used-library">Used library</h2>
+<ul>
+<li>marked.js (<a href="https://github.com/markedjs/marked">https://github.com/markedjs/marked</a>)<br>License at <a href="/LICENSE/MarkedJS-LICENSE.md">&#39;License&#39; directory</a></li>
+</ul>
+<h2 id="how-to-use">How to use?</h2>
+<ul>
+<li>Require AutoHotkey 1.1+  </li>
+<li>Run MD2HTML-gui.ahk</li>
+</ul>
+<h2 id="contact">Contact</h2>
+<ul>
+<li><a href="mailto:&#x67;&#105;&#116;&#104;&#117;&#98;&#64;&#x70;&#110;&#97;&#x6c;&#46;&#x73;&#x6f;&#x76;&#101;&#114;&#x69;&#110;&#x2e;&#110;&#101;&#116;">&#x67;&#105;&#116;&#104;&#117;&#98;&#64;&#x70;&#110;&#97;&#x6c;&#46;&#x73;&#x6f;&#x76;&#101;&#114;&#x69;&#110;&#x2e;&#110;&#101;&#116;</a></li>
+</ul>
+<p>Please contact in English or Korean(Native)</p>
+
 			</section>
 		</div>
 	</article>

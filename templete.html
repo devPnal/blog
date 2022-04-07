@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>posts</title>
+	<title>Temp Title</title>
 	<link rel="stylesheet" href="/style.css">
   <script src="/script/marked.js"></script>
   <script src="/script/core-script.js"></script>
@@ -37,19 +37,7 @@
 	<article>
 		<div class='article-wrap'>
 			<section>
-				<script>
-					var metaArr = [];
-					loadHTML("meta.md", data=>(metaArr = getArticleInfo(data)));
-					document.write("<h1 class='article-title'>" + metaArr.title + "</h1>");
-					document.write("<p class='article-description'>" + metaArr.description + "</p>");
-					document.write("<p class='post-date'>" + metaArr.date + "</p>");
-				</script>
-				<hr>
-				<div class='main-article'>
-					<script>
-						loadHTML("README.md", data=>document.write(marked.parse(data)));
-					</script>
-				</div>
+				@post==
 			</section>
 		</div>
 	</article>

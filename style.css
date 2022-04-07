@@ -8,9 +8,60 @@ html, body {
   font-family: "Malgun Gothic","맑은 고딕","Roboto","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
 }
 
-/*
-사이드 바 
-*/
+/* h1 ~ h6 스타일 */
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 24px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+h5, h6 { font-size: 14px; }
+
+/* GFM 표 스타일 */
+table {
+  padding: 0;
+}
+
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0;
+}
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0;
+}
+
+/* a 태그 기본 색상*/
+a { color: #0077aa; }
+
+/* 사이드 바 */
 .sidebar {
   display: block;
   position: fixed;
@@ -22,9 +73,7 @@ html, body {
   box-shadow: 4px 0 4px -4px #ccc;
 }
 
-/*
-헤더
-*/
+/* 헤더 */
 header {
   padding: 20px 0;
   text-align: center;
@@ -50,9 +99,7 @@ header a {
   color: #fefefe;
 }
 
-/*
-어바웃 / 컨택트 
-*/
+/* 어바웃 / 컨택트 */
 .site-nav {
   list-style: none;
   padding: 0px;
@@ -77,9 +124,7 @@ header a {
   background: #eee;
 }
 
-/*
-태그
-*/
+/* 태그 */
 .subject-text {
   padding: 10px;
   font-weight: bold;
@@ -89,7 +134,6 @@ header a {
 
 .site-tags {
   display: inline-block;
-  list-style: none;
   line-height: 45px;
   padding: 10px;
 }
@@ -106,9 +150,7 @@ header a {
   text-decoration: underline;
 }
 
-/*
-푸타
-*/
+/* 푸터 */
 footer {
   position: absolute;
   bottom: 10px;
@@ -125,9 +167,7 @@ footer {
   text-decoration: underline;
 }
 
-/*
-본문
-*/
+/* 본문 */
 article {
   margin-left: 250px;
   width: Calc(100% - 250px);
@@ -150,16 +190,77 @@ article {
   display: inline-block;
 }
 
-.post-date {
+.article-date {
   display: inline-block;
   float: right;
 }
-
 
 .main-article {
   padding-top: 10px;
 }
 
-.main-article h1 {
-  font-size: 28px;
+/*최근 글 목록*/
+.recent-post {
+  height: 130px;
+  //border: 1px solid #ccc;
+  margin: 10px 0;
+  padding-top: 20px;
+}
+
+.post-thumbnail-wrap {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+}
+
+.recent-post .post-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.recent-post .post-infomation {
+  padding: 3px 0px 3px 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.recent-post .post-infomation .post-title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.recent-post .post-infomation .post-title:hover{
+  text-decoration: underline;
+}
+
+.recent-post .post-infomation .post-description{
+  display: block;
+  width: Calc(740px - 128px - 20px);
+  height: 62px;
+  padding-top: 5px;
+  overflow: hidden;
+}
+
+.post-infomation .post-tags a {
+  display: inline-block;
+  background: #333;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 6px;
+  font-size: 14px;
+}
+.post-infomation .post-tags a:hover {
+  text-decoration: underline;
+}
+
+.post-infomation .post-date {
+  float: right;
+  vertical-align: bottom;
+  line-height: 38px;
+  margin-right: 10px;
 }
