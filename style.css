@@ -181,8 +181,9 @@ footer {
 
 /* 본문 */
 article {
+  float: right;
   margin-left: 250px;
-  width: Calc(100% - 250px);
+  width: 100%;
   height: 100%;
 }
 
@@ -275,4 +276,12 @@ article {
   vertical-align: bottom;
   line-height: 38px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 1700px)
+{
+  article {
+    margin-left: 250px;
+    width: Calc(100% - 250px);
+  }
 }
