@@ -78,7 +78,7 @@ code { font-family: Consolas, Menlo, Arial; }
   position: fixed;
   float: left;
   margin: 0px;
-  width: 250px;
+  width: auto;
   height: 100%;
   background: #fafafa;
   box-shadow: 4px 0 4px -4px #ccc;
@@ -164,12 +164,13 @@ header a {
 /* 푸터 */
 footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
+  width: 100%;
 }
 
 .footer-msg {
   font-size: 14px;
-  padding: 20px 20px 0 20px;
+  margin: 20px 20px 0 20px;
   text-decoration: none;
   color: black;
 }
