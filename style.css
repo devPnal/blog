@@ -254,8 +254,8 @@ margin-top: 50px;
 
 .post-thumbnail-wrap {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 140px;
+  height: 140px;
 }
 
 .recent-post .post-thumbnail {
@@ -284,10 +284,11 @@ margin-top: 50px;
 
 .recent-post .post-infomation .post-description{
   display: block;
-  width: Calc(740px - 128px - 20px);
-  height: 62px;
+  width: Calc(740px - 140px - 20px);
+  height: 72px;
   padding-top: 5px;
   overflow: hidden;
+  line-height: 1.6;
 }
 
 .post-infomation .post-tags a {
@@ -296,9 +297,11 @@ margin-top: 50px;
   text-decoration: none;
   color: #fff;
   padding: 5px 10px;
-  margin-top: 6px;
+  margin-top: 8px;
+  margin-right: 5px;
   font-size: 14px;
 }
+
 .post-infomation .post-tags a:hover {
   text-decoration: underline;
 }
@@ -306,7 +309,7 @@ margin-top: 50px;
 .post-infomation .post-date {
   float: right;
   vertical-align: bottom;
-  line-height: 38px;
+  line-height: 50px;
   margin-right: 10px;
 }
 
