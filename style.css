@@ -3,14 +3,18 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #fdfdfd;
+  background: #fefefe;
   height: 100%;
   font-family: "Malgun Gothic","맑은 고딕","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 /* h1 ~ h6 스타일 */
 h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 10px;
+  padding: 0;
+  position: relative;
 }
 
 h1 { font-size: 28px; }
@@ -70,7 +74,30 @@ blockquote {
 a { color: #0077aa; }
 
 /* 코드 */
-code { font-family: Consolas, Menlo, Arial; }
+code, tt {
+  margin: 0 2px;
+  padding: 0px 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  font-family: Consolas, Menlo, Malgun Gothic;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+/* 형광펜 */
+mark {
+  background-color: #C3F3BB;
+  color: #50505A;
+  padding: 0 3px;
+}
 
 /* 사이드 바 */
 .sidebar {
@@ -95,12 +122,14 @@ header {
 header a {
   color: #fefefe;
   text-decoration: none;
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .site-title {
   display: inline-block;
   margin: 0 auto;
-  padding: 0 auto;
   font-size: 2.3em;
 }
 
@@ -194,11 +223,6 @@ article {
   padding-bottom: 100px;
 }
 
-.article-title {
-  font-size: 28px;
-  margin: 0px;
-}
-
 .article-description {
   display: inline-block;
 }
@@ -210,6 +234,14 @@ article {
 
 .main-article {
   padding-top: 10px;
+  line-height: 1.8em;
+  letter-spacing: -1px;
+  color: #222;
+  word-break: break-all;
+}
+
+.main-article h2 {
+margin-top: 50px;
 }
 
 /*최근 글 목록*/
@@ -281,7 +313,7 @@ article {
 @media screen and (max-width: 1700px)
 {
   article {
-    margin-left: 250px;
-    width: Calc(100% - 250px);
+    margin-left: 245px;
+    width: Calc(100% - 245px);
   }
 }
