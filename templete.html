@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>Temp Title</title>
+	<title>@title==</title>
 	<link rel="stylesheet" href="/style.css">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,13 @@
 	<article>
 		<div class='article-wrap'>
 			<section>
-				@post==
+				<h1 class='article-title'>@title==</h1>
+				<p class='article-description'>@description==</p>
+				<p class='article-date'>@date==</p>
+				<hr>
+				<div class='main-article'>
+					@article==
+				</div>
 			</section>
 		</div>
 	</article>
