@@ -193,7 +193,7 @@ header a {
 /* 푸터 */
 footer {
   position: absolute;
-  bottom: 0px;
+  top: Calc(100% - 76px);
   width: 100%;
 }
 
@@ -240,8 +240,36 @@ article {
   word-break: break-all;
 }
 
-.main-article h2 {
-margin-top: 50px;
+.main-article p {
+  margin-top: 1.5em;
+  margin-bottom: 0px;
+}
+
+.main-article h2, .main-article h3 {
+  margin-top: 50px;
+}
+
+.main-article li {
+  padding-left: 5px;
+}
+
+.main-article li::marker {
+  font-weight: bold;
+  color: #1CB2A8;
+}
+
+.main-article .half {
+  margin-top: 50px;
+  width: 50%;
+}
+
+.main-article img {
+  display: block;
+  margin: 0 auto;
+}
+.main-article .img-description {
+  text-align: center;
+  font-size: 14px;
 }
 
 /*최근 글 목록*/
@@ -262,6 +290,8 @@ margin-top: 50px;
   width: 100%;
   height: 100%;
   object-fit:cover;
+  box-shadow: 0px 0px 2px 2px #eee;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 .recent-post .post-infomation {
