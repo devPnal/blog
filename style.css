@@ -192,14 +192,14 @@ header a {
 
 /* 푸터 */
 footer {
-  position: absolute;
-  top: Calc(100% - 76px);
+  position: fixed;
+  bottom: 20px;
   width: 100%;
 }
 
 .footer-msg {
   font-size: 14px;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 0 20px;
   text-decoration: none;
   color: black;
 }
