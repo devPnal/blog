@@ -158,9 +158,10 @@ header a {
 
 .site-nav-blank {
   clear: both;
+  height: 15px;
 }
 
-.site-nav li a:hover {
+.site-nav a:hover {
   background: #eee;
 }
 
