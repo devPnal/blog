@@ -5,7 +5,7 @@ html, body {
   padding: 0;
   background: #fefefe;
   height: 100%;
-  font-family: "Malgun Gothic","맑은 고딕","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
+  font-family: "Malgun Gothic","Segoe UI","Helvetica Neue","Lucida Grande", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
 }
