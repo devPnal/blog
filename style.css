@@ -109,6 +109,7 @@ mark {
   height: 100%;
   background: #fafafa;
   box-shadow: 4px 0 4px -4px #ccc;
+  z-index: 1;
 }
 
 /* 헤더 */
@@ -218,7 +219,7 @@ article {
 }
 
 .article-wrap {
-  width: 780px;
+  width: 740px;
   margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 100px;
@@ -235,8 +236,8 @@ article {
 
 .main-article {
   padding-top: 10px;
-  line-height: 1.8em;
-  letter-spacing: -1px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
   color: #222;
   word-break: break-all;
 }
@@ -259,15 +260,27 @@ article {
   color: #1CB2A8;
 }
 
-.main-article .half {
+.main-article .hr100 {
+  margin-top: 50px;
+}
+
+.main-article .hr50 {
   margin-top: 50px;
   width: 50%;
+}
+
+.main-article .hr25 {
+  margin-top: 50px;
+  width: 20%;
+  color: #ccc;
 }
 
 .main-article img {
   display: block;
   margin: 0 auto;
+  max-height: 350px;
 }
+
 .main-article .img-description {
   text-align: center;
   font-size: 14px;
@@ -323,11 +336,11 @@ article {
   height: 72px;
   padding-top: 5px;
   overflow: hidden;
-  line-height: 1.6;
+  line-height: 1.5em;
   color: black;
 }
 
-.post-infomation .post-tags a {
+.post-tags a {
   display: inline-block;
   background: #333;
   text-decoration: none;
@@ -336,9 +349,10 @@ article {
   margin-top: 8px;
   margin-right: 5px;
   font-size: 14px;
+  line-height: 18px;
 }
 
-.post-infomation .post-tags a:hover {
+.post-tags a:hover {
   text-decoration: underline;
 }
 
