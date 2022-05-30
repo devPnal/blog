@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+/* ***************
+ * 전역 설정
+ * ***************/
 html, body {
   margin: 0;
   padding: 0;
@@ -98,6 +101,41 @@ mark {
   color: #333333;
   padding: 0 3px;
 }
+
+/* 툴팁 */
+.tooltip {
+  cursor: pointer;
+  color: #0077aa;
+  position: relative;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  left: 0px;
+  bottom: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  line-height: 20px;
+  color: #222;
+  z-index: 1;
+  box-shadow: 0px 0px 5px #888;
+}
+
+.tooltip:active .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+
+/* ***************
+ * 구역 별 설정
+ * ***************/
 
 /* 사이드 바 */
 .sidebar {
@@ -279,6 +317,7 @@ article {
   display: block;
   margin: 0 auto;
   max-height: 350px;
+  max-width: 700px;
 }
 
 .main-article .img-description {
