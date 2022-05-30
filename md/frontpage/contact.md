@@ -9,5 +9,5 @@ date:
 
 ## 외부 연결
 - 개인 포트폴리오: https://pnal.dev
-- AutoHotkey 강좌: https://pnal.kr <sup class='tooltip'>[티스토리]<span class='tooltip-text'>티스토리를 통해 운영되며, 방문자 통계를 위한 트래커와 광고가 적용되어있으므로 프라이버시에 민감하신 분은 주의해주세요.</span></sup>
+- AutoHotkey 강좌: https://pnal.kr <sup>티스토리로 연결됩니다.</sup>
 - GitHub: https://github.com/devpnal
