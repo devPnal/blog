@@ -325,8 +325,9 @@ article {
 .main-article img {
   display: block;
   margin: 0 auto;
-  height: 350px;
   max-width: Calc(100% - 20px);
+  max-height: 350px;  
+  height: auto;
 }
 
 .main-article .img-description {
