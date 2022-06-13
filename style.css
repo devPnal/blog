@@ -68,7 +68,7 @@ table tr th :last-child, table tr td :last-child {
 /* 인용문 */
 blockquote {
   color: #333;
-  border-left: 5px solid #888;
+  border-left: 5px solid #00C896;
   padding: 0 1em;
   margin-left: 0px;
   margin-right: 0px;
@@ -82,7 +82,7 @@ code, tt {
   margin: 0 2px;
   padding: 0px 5px;
   white-space: nowrap;
-  border: 1px solid #eaeaea;
+  box-shadow: 0px 0px 2px #888;
   background-color: #f8f8f8;
   border-radius: 3px;
   font-family: Consolas, Menlo, Malgun Gothic;
@@ -99,38 +99,13 @@ pre code {
 /* 형광펜 */
 mark {
   background-color: #C3F3BB;
-  color: #333333;
+  color: #222;
   padding: 0 3px;
 }
 
-/* 툴팁 */
-.tooltip {
-  cursor: pointer;
-  color: #0077aa;
-  position: relative;
-}
-
-.tooltip .tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  width: 300px;
-  left: 0px;
-  bottom: 20px;
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 5px 10px;
-  line-height: 20px;
-  color: #222;
-  z-index: 1;
-  box-shadow: 0px 0px 5px #888;
-}
-
-.tooltip:active .tooltip-text {
-  visibility: visible;
-}
-
-.tooltip:hover .tooltip-text {
-  visibility: visible;
+.underline {
+  background-color: transparent;
+  text-decoration: 2px underline #ff3333;
 }
 
 
@@ -196,7 +171,7 @@ header a {
 }
 
 .site-nav .site-nav-special a {
-  display: inline-block;
+  display: block;
   float: left;
   text-align: center;
   text-decoration: none;
@@ -277,7 +252,7 @@ article {
 }
 
 .article-date {
-  display: inline-block;
+  display: block;
   float: right;
 }
 
@@ -294,7 +269,21 @@ article {
   margin-bottom: 0px;
 }
 
-.main-article h2, .main-article h3 {
+.main-article h2 {
+  display: block;
+  background-color: #FAFAFA;
+  border-left: 5px solid #00C896;
+  box-shadow: 0px 1px 5px #ccc;
+  padding: 10px 20px;
+  margin-top: 50px;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.main-article h3 {
+  display: inline-block;
+  background-color: #fff ;
   margin-top: 50px;
 }
 
@@ -304,7 +293,7 @@ article {
 
 .main-article li::marker {
   font-weight: bold;
-  color: #1CB2A8;
+  color: #00C896;
 }
 
 .main-article .hr100 {
@@ -322,23 +311,33 @@ article {
   color: #ccc;
 }
 
+.main-article .vt {
+  width: 2px;
+  height: 50px;
+  border-width: 0;
+  color: #ccc;
+  background-color: #ccc;
+  margin-top: 40px;
+}
+
 .main-article img {
   display: block;
-  margin: 0 auto;
-  max-width: Calc(100% - 20px);
-  max-height: 350px;  
+  margin: 50px auto;
+  margin-bottom: 0px;
+  max-width: Calc(100% - 100px);
+  max-height: 350px;
   height: auto;
 }
 
 .main-article .img-description {
   text-align: center;
+  margin-bottom: 50px;
   font-size: 14px;
 }
 
 /*최근 글 목록*/
 .recent-post {
   height: 130px;
-  //border: 1px solid #ccc;
   margin: 10px 0;
   padding-top: 20px;
 }
@@ -427,6 +426,10 @@ article {
     display: none;
   }
 
+  .main-article img {
+    max-width: Calc(100% - 20px);
+  }
+
   article {
     float: none;
     margin: 0 auto;
@@ -487,9 +490,6 @@ article {
   .recent-post .post-infomation .post-description {
     width: 100%;
     text-align: justify;
-  }
-
-  .recent-post .post-infomation .post-tags {
   }
 
   .mobile-footer {
