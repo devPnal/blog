@@ -426,7 +426,7 @@ article {
   opacity: 0;
   transition: .3s ease-in-out;
   backdrop-filter: blur(5px);
-  background: #000000AA;
+  background: #000000CC;
   z-index: 2;
   pointer-events: none;
 }
@@ -448,7 +448,7 @@ article {
     display: fixed;
     overflow-y: hidden;
     z-index: 2;
-    box-shadow: none;
+    box-shadow: 4px 0 4px -4px #555;
   }
 
   .main-article img {
@@ -574,6 +574,10 @@ article {
   
   .burger-check:checked~ .sidebar {
     left: 0px; 
+  }
+
+  .burger-check:checked~ .burger-icon{
+    left: Calc(100% - 50px);
   }
 
   .burger-check:checked~ .mobile-space-blur {
