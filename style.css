@@ -428,6 +428,7 @@ article {
   backdrop-filter: blur(5px);
   background: #000000AA;
   z-index: 2;
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1700px)
@@ -576,6 +577,7 @@ article {
   }
 
   .burger-check:checked~ .mobile-space-blur {
+    z-index: 2;
     opacity: 1;
   }
 
