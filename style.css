@@ -577,7 +577,7 @@ article {
   }
 
   .burger-check:checked~ .mobile-space-blur {
-    z-index: 2;
+    pointer-events: auto;
     opacity: 1;
   }
 
