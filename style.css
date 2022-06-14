@@ -412,6 +412,22 @@ article {
   bottom: -10px;
 }
 
+.burger-check {
+  display: none;
+}
+
+.mobile-space-blur {
+  position: fixed;
+  display: block;
+  left: 100%;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
 @media screen and (max-width: 1700px)
 {
   article {
@@ -423,7 +439,12 @@ article {
 @media screen and (max-width: 1023px)
 {
   .sidebar {
-    display: none;
+    transition: 0.5s ease;
+    left: -400px;
+    top: 0px;
+    display: fixed;
+    overflow-y: hidden;
+    z-index: 2;
   }
 
   .main-article img {
@@ -498,5 +519,81 @@ article {
     width: 100%;
     height: 70px;
     margin-top: 50px;
+  }
+
+  .burger-icon {
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+    z-index: 3;
+    padding: 10px 10px;
+    top: 10px;
+    left: 10px;
+    user-select: none;
+    width: auto;
+    margin: 0;
+    transition: 0.5s ease;
+  }
+  
+  .burger-icon .burger-sticks {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: all .2s ease-out;
+    width: 18px;
+    z-index: 3;
+  }
+  
+  .burger-icon .burger-sticks:before,
+  .burger-icon .burger-sticks:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .burger-icon .burger-sticks:before {
+    top: 5px;
+  }
+  
+  .burger-icon .burger-sticks:after {
+    top: -5px;
+  }
+  
+  .burger-check {
+    display: none;
+  }
+  
+  .burger-check:checked~ .sidebar, .burger-check:checked~ .mobile-space-blur {
+    left: 0px; 
+  }
+
+  .burger-check:checked~.burger-icon .burger-sticks {
+    background: transparent;
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks:before {
+    transform: rotate(-45deg);
+    background: white;
+  }
+  
+  .burger-check:checked~.burger-icon .burger-sticks:after {
+    transform: rotate(45deg);
+    background: white;
+  }
+  
+  .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
+  .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
+    top: 0;
+  }
+  
+  .mobile-space-blur {
+    background: #000000AA;
+    opacity: 1;
+    z-index: 2;
   }
 }
