@@ -576,10 +576,6 @@ article {
     left: 0px; 
   }
 
-  .burger-check:checked~ .burger-icon{
-    left: 250px;
-  }
-
   .burger-check:checked~ .mobile-space-blur {
     pointer-events: auto;
     opacity: 1;
